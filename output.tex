@@ -1,0 +1,296 @@
+I have analyzed the job offer and the candidate's resume. Here is a summary of the key skills and qualifications required for the position:
+
+**Summary of the Job Offer:**
+The position is for a **Data Engineer** in the IT Compliance Financial Security department. The main responsibilities include developing, building, and maintaining data applications and infrastructures.
+
+*   **Key Skills:**
+    *   **Programming:** Excellent skills in **Python** and **Java/Spark**.
+    *   **Data Science Platforms & Libraries:** Experience with Jupyter Notebook, **scikit-learn**, **pandas**, Matplotlib.
+    *   **Databases:** Good knowledge of SQL and NoSQL databases.
+    *   **Big Data Technologies:** Experience with distributed frameworks like Spark (pySpark, SparkSQL), Kafka, and Big Data object stores like S3.
+    *   **Tools:** Git, Airflow, MLflow, Docker, Kubernetes.
+    *   **Methodologies:** Agile.
+*   **Qualifications:**
+    *   **Education:** Master's degree (Bac + 5 / M2) or higher in Information Systems or a specialization in data science.
+    *   **Experience:** 2 to 5 years of experience as a Data Engineer.
+    *   **Languages:** Operational English and French.
+
+The candidate's profile is a very good match for this offer. He has a Master's degree in Applied Mathematics, extensive experience with Python and data science libraries, and relevant project and work experience.
+
+Now, I will generate the `.tex` file with the candidate's information tailored to the job offer. I will write the content in French, as requested. I'll reorder the work experience to highlight the most relevant roles first. The "Prompt Development and Analysis with LLMs" is highly relevant due to the AI/ML focus, and the "Internship II: Call Center Software" is relevant for its predictive modeling and time series analysis. I will also make sure to include the "Outstanding Student" award.
+
+Here is the generated `.tex` file:
+```latex
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	The MIT License (MIT)
+%
+%	Copyright (c) 2021 Jitin Nair
+%
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%	
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+%	THE SOFTWARE.
+%	
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT DEFINITION
+%----------------------------------------------------------------------------------------
+\documentclass[a4paper,12pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	ATS-SAFE ENCODING / FONTS (CRITICAL FOR PDF TEXT EXTRACTION)
+%----------------------------------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% Improve copy/paste + ATS extraction (ToUnicode mapping)
+\usepackage{cmap}
+\input glyphtounicode.tex
+\pdfgentounicode=1
+
+% Avoid word splitting/hyphenation artifacts that can create corrupted chars in parsers
+\usepackage[none]{hyphenat}
+% (Optional extra safety; usually not needed if hyphenat is used)
+% \hyphenpenalty=10000
+% \exhyphenpenalty=10000
+% \pretolerance=10000
+% \tolerance=2000
+% \emergencystretch=2em
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip}
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section (kept, but not used)
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{multirow}
+\usepackage{multicol}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+%custom \section
+\usepackage{titlesec}
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+
+% NOTE: Removed fontawesome5 to avoid ATS parsing issues with icon glyphs
+% \usepackage{fontawesome5}
+
+%----------------------------------------------------------------------------------------
+% job listing environments (keep template)
+%----------------------------------------------------------------------------------------
+\newenvironment{jobshort}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    }
+    {
+    }
+
+\newenvironment{joblong}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    }
+    {
+    \end{itemize}
+    \end{minipage}
+    }
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty}
+
+%----------------------------------------------------------------------------------------
+%	TITLE (keep centered look, plain text for ATS)
+%----------------------------------------------------------------------------------------
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Gary Alan Vidal Castillo} \\[7.5pt]
+GitHub: \href{https://github.com/GaryVidalC}{github.com/GaryVidalC} \ $|$ \
+LinkedIn: \href{https://linkedin.com/in/gary-vidal-95b1a720b}{linkedin.com/in/gary-vidal-95b1a720b} \ $|$ \
+Email: \href{mailto:gvidal@dim.uchile.cl}{gvidal@dim.uchile.cl} \ $|$ \
+Tel: +56 9 5224 9357 \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% SUMMARY
+%----------------------------------------------------------------------------------------
+\section{Résumé}
+Data Scientist / Machine Learning Engineer avec une formation d'Ingénieur Civil en Mathématiques et un Master en Mathématiques Appliquées. Expérience en modélisation prédictive, analyse de données, séries temporelles et développement de solutions basées sur le Machine Learning et les LLMs, en utilisant Python, SQL et des bibliothèques de science des données dans des contextes académiques et industriels.
+%----------------------------------------------------------------------------------------
+% EXPERIENCE
+%----------------------------------------------------------------------------------------
+\section{Expérience Professionnelle}
+
+\begin{jobshort}{Développement et Analyse de Prompts avec des LLMs}{mai 2025 -- Aujourd'hui}
+\textit{\textbf{Centro de investigación Avanzada en Educación (CIAE), Santiago, Chili}}\\
+- Ingénierie des prompts pour l'analyse de dessins d'enfants.\\- Évaluation de la compréhension de concepts mathématiques avancés et de la créativité.\\- Utilisation de l'API OpenAI et évaluation de différents modèles d'IA.
+\end{jobshort}
+
+\begin{jobshort}{Stage II : Logiciel de Centre d'Appels}{janvier 2023 -- février 2023}
+\textit{\textbf{Logaritmo Tecnologías de Información, Santiago, Chili}}\\
+- Développement de modèles prédictifs pour les opérations de centres d'appels en utilisant l'analyse de séries temporelles.\\- Implémentation d'outils analytiques pour des niveaux de dotation optimaux.\\- Modèles entraînés avec trois ans de données historiques du centre d'appels.
+\end{jobshort}
+
+\begin{jobshort}{Stage I : Conseil en Exploitation Minière}{janvier 2022 -- février 2022}
+\textit{\textbf{Alicanto Labs, Santiago, Chili}}\\
+- Développement de modèles d'optimisation mathématique pour les opérations minières à ciel ouvert.\\- Implémentation d'algorithmes d'extraction en Python.\\- Utilisation de Gurobi avec des données minières réelles.
+\end{jobshort}
+
+\begin{jobshort}{Assistant Pédagogique}{mars 2024 -- juillet 2024}
+\textit{\textbf{Université du Chili, Santiago, Chili}}\\
+- Soutien pédagogique en algèbre pour les étudiants de première année d'ingénierie.\\- Réponse aux questions des étudiants et clarification des concepts.\\- Préparation de matériel pédagogique.
+\end{jobshort}
+
+\begin{jobshort}{Assistant Pédagogique}{mars 2023 -- décembre 2024}
+\textit{\textbf{Université du Chili, Santiago, Chili}}\\
+- Notation et supervision des évaluations des étudiants.\\- Révision des énoncés de problèmes et des évaluations.
+\end{jobshort}
+
+\begin{jobshort}{Étudiant Chercheur}{septembre 2019 -- juin 2021}
+\textit{\textbf{Institut de Mathématiques de Marseille, Marseille, France}}\\
+- Recherche sur les équations différentielles périodiques dans les espaces de Hilbert.\\- Travail dans des cadres d'espaces de Hilbert.\\- Supervisé par Mihai Bostan.
+\end{jobshort}
+
+%----------------------------------------------------------------------------------------
+% PROJECTS
+%----------------------------------------------------------------------------------------
+\section{Projets Universitaires}
+
+\begin{jobshort}{Arbres de Classification Bayésiens}{Printemps 2022}
+\textit{\textbf{Université du Chili, Santiago, Chili}}\\
+- Développement d'arbres de classification utilisant des chaînes de Markov. \\- Utilisation de l'algorithme de Metropolis-Hastings.
+\end{jobshort}
+
+\begin{jobshort}{Modèle d'Évolution et de Sélection Naturelle}{Automne 2023}
+\textit{\textbf{Université du Chili, Santiago, Chili}}\\
+- Modélisation mathématique de la dynamique des populations à l'aide d'équations aux dérivées partielles.\\- Les membres du groupe possédaient des gènes spéciaux qui leur conféraient des avantages en matière de survie et de reproduction.
+\end{jobshort}
+
+\begin{jobshort}{Lâcher de Moustiques}{Printemps 2023}
+\textit{\textbf{Université du Chili, Santiago, Chili}}\\
+- Modèle de contrôle optimal pour la lutte contre les moustiques nuisibles à l'aide de spécimens génétiquement modifiés.\\- Des moustiques modifiés ont été relâchés pour réduire la population de moustiques porteurs de maladies.
+\end{jobshort}
+
+%----------------------------------------------------------------------------------------
+% EDUCATION
+% Education in tabular format
+%----------------------------------------------------------------------------------------
+\section{Formation}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+2017 -- 2025 & Master of Science en Ingénierie (Mathématiques Appliquées), \textbf{Université du Chili}  \\
+2017 -- 2025 & Ingénieur Civil en Mathématiques, \textbf{Université du Chili} \\
+2019 -- 2021 & Programme de double diplôme (Ingénieur Généraliste), \textbf{École Centrale de Marseille} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% LANGUAGES 
+% languages in tabular format
+%----------------------------------------------------------------------------------------
+\section{Langues}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Espagnol & Natif \\
+Anglais & Avancé (C1/C2) \\
+Français & Intermédiaire (B1/B2) \\
+Portugais & Basique (A1/A2) \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% AWARDS
+%----------------------------------------------------------------------------------------
+\section{Honneurs et Récompenses}
+
+\begin{jobshort}{Étudiant d'Exception}{mars 2017}
+\textit{\textbf{Université du Chili, Santiago, Chili}}\\
+Étudiant d'exception du tronc commun d'ingénierie.
+\end{jobshort}
+
+\begin{jobshort}{Bourse de l'Université du Chili}{mars 2017}
+\textit{\textbf{Université du Chili, Santiago, Chili}}\\
+Bourse de premier cycle couvrant l'intégralité des frais de scolarité.
+\end{jobshort}
+
+\begin{jobshort}{Bourse CMM}{mars 2024}
+\textit{\textbf{Centre de Modélisation Mathématique, Santiago, Chili}}\\
+Bourse de maîtrise couvrant l'intégralité des frais de scolarité.
+\end{jobshort}
+
+\begin{jobshort}{Bourse de Mobilité Étudiante}{septembre 2019}
+\textit{\textbf{Université du Chili, Santiago, Chili}}\\
+Bourse pour le programme de double diplôme avec les Écoles Centrales de France.
+\end{jobshort}
+
+%----------------------------------------------------------------------------------------
+% SKILLS
+% add skills in a tabular format
+%----------------------------------------------------------------------------------------
+\section{Compétences}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Langages & Python, SQL, R, Matlab, Julia, LaTeX.\\
+Bibliothèques & pandas, NumPy, scikit-learn, PyTorch, SciPy, Matplotlib.\\
+Outils & Git/GitHub, Jupyter Notebooks.
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% KEYWORDS (ATS)
+%----------------------------------------------------------------------------------------
+\section{Mots-clés}
+Machine Learning, Data Science, Modélisation prédictive, Séries temporelles, Optimisation, Analyse statistique, IA, Python, SQL, Git, Docker, Spark.
+
+%----------------------------------------------------------------------------------------
+% References
+%----------------------------------------------------------------------------------------
+\section{Références}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Roberto Araya Schulz & Superviseur direct au CIAE. Peut attester de mes compétences en ingénierie et analyse de prompts avec des LLMs. (roberto.araya.schulz@gmail.com) \\
+Marcos Goycoolea & Superviseur lors de mon stage chez Alicanto Labs. Peut attester de mes compétences en modélisation mathématique et optimisation dans des contextes miniers. (marcos.goycoolea@uc.cl) \\
+Pedro Montealegre & Directeur de mémoire de Master. Peut attester de mes compétences en algorithmes et de mes capacités de recherche. (p.montealegre@uai.cl) \\
+Ivan Rapaport & Directeur de mémoire de Master. Peut attester de mes compétences en algorithmes et de mes capacités de recherche. (rapaport@dim.uchile.cl) \\
+\end{tabularx}
+\vfill
+\center{\footnotesize Dernière mise à jour: \today}
+
+\end{document}
+```

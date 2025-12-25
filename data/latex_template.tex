@@ -1,0 +1,221 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	The MIT License (MIT)
+%
+%	Copyright (c) 2021 Jitin Nair
+%
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%	
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+%	THE SOFTWARE.
+%	
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT DEFINITION
+%----------------------------------------------------------------------------------------
+\documentclass[a4paper,12pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	ATS-SAFE ENCODING / FONTS (CRITICAL FOR PDF TEXT EXTRACTION)
+%----------------------------------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% Improve copy/paste + ATS extraction (ToUnicode mapping)
+\usepackage{cmap}
+\input glyphtounicode.tex
+\pdfgentounicode=1
+
+% Avoid word splitting/hyphenation artifacts that can create corrupted chars in parsers
+\usepackage[none]{hyphenat}
+% (Optional extra safety; usually not needed if hyphenat is used)
+% \hyphenpenalty=10000
+% \exhyphenpenalty=10000
+% \pretolerance=10000
+% \tolerance=2000
+% \emergencystretch=2em
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip}
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section (kept, but not used)
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{multirow}
+\usepackage{multicol}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+%custom \section
+\usepackage{titlesec}
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+
+% NOTE: Removed fontawesome5 to avoid ATS parsing issues with icon glyphs
+% \usepackage{fontawesome5}
+
+%----------------------------------------------------------------------------------------
+% job listing environments (keep template)
+%----------------------------------------------------------------------------------------
+\newenvironment{jobshort}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    }
+    {
+    }
+
+\newenvironment{joblong}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    }
+    {
+    \end{itemize}
+    \end{minipage}
+    }
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty}
+
+%----------------------------------------------------------------------------------------
+%	TITLE (keep centered look, plain text for ATS)
+%----------------------------------------------------------------------------------------
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Gary Alan Vidal Castillo} \\[7.5pt]
+GitHub: \href{https://github.com/GaryVidalC}{github.com/GaryVidalC} \ $|$ \
+LinkedIn: \href{https://linkedin.com/in/gary-vidal-95b1a720b}{linkedin.com/in/gary-vidal-95b1a720b} \ $|$ \
+Email: \href{mailto:gvidal@dim.uchile.cl}{gvidal@dim.uchile.cl} \ $|$ \
+Tel: +56 9 5224 9357 \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% SUMMARY
+%----------------------------------------------------------------------------------------
+\section{Summary}
+summary of your profile, skills, experience, and goals. Keep it concise and relevant to the job you are applying for.
+%----------------------------------------------------------------------------------------
+% EXPERIENCE
+%----------------------------------------------------------------------------------------
+\section{Work Experience}
+
+\begin{jobshort}{Work title}{start date -- end date} %can be just {date} if no start/end date}
+\textit{\textbf{Institution, City}}\\
+description
+\end{jobshort}
+
+
+%----------------------------------------------------------------------------------------
+% PROJECTS
+%----------------------------------------------------------------------------------------
+\section{University Projects}
+
+\begin{jobshort}{project name}{date}
+\textit{\textbf{Institution, city}}\\
+Description
+\end{jobshort}
+
+%----------------------------------------------------------------------------------------
+% EDUCATION
+% Education in tabular format
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+2017 -- 2025 & Master of Science in Engineering (Applied Mathematics), \textbf{University of Chile}  \\
+2017 -- 2025 & Mathematical Civil Engineering, \textbf{University of Chile} \\
+2019 -- 2021 & Double degree program (Ingénieur Généraliste), \textbf{École Centrale de Marseille} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% LANGUAGES 
+% languages in tabular format
+%----------------------------------------------------------------------------------------
+\section{Languages}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Spanish & Native \\
+English & Advanced (C1/C2) \\
+French & Intermediate (B1/B2) \\
+Portuguese & Basic (A1/A2) \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% AWARDS
+%----------------------------------------------------------------------------------------
+\section{Honors and Awards}
+
+\begin{jobshort}{Name of the award}{start date -- end date} %can be just {date} if no start/end date}
+\textit{\textbf{Institution, City}}\\
+Description
+\end{jobshort}
+
+%----------------------------------------------------------------------------------------
+% SKILLS
+% add skills in a tabular format
+%----------------------------------------------------------------------------------------
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Languages & Python, SQL, R, Matlab, Julia, LaTeX.\\
+Libraries & pandas, NumPy, scikit-learn, PyTorch, SciPy, Matplotlib.\\
+Tools & Git/GitHub
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% KEYWORDS (ATS)
+%----------------------------------------------------------------------------------------
+\section{Keywords}
+Add keywords, keyword 2, ..., keyword n.
+
+%----------------------------------------------------------------------------------------
+% References
+%----------------------------------------------------------------------------------------
+\section{References}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Reference name & description, contact info \\
+Reference name & description, contact info \\
+\end{tabularx}
+\vfill
+\center{\footnotesize Last updated: \today}
+
+\end{document}
