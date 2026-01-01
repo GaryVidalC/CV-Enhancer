@@ -30,7 +30,8 @@ Read the job offer at the provided URL {url} and summarize the key skills, quali
 You also have a .json resume file, and a .tex template. 
 You have to pick the most relevant information form the .json resume that fits the CV and create a .tex file following the .tex structure, the text in the .tex file must be in {language}. 
 You can tweak the decriptions in order to match better the job offer, but you must follow the .tex template structure. Put all the work experience and the projects in the CV, but arrange the order based on the job offer requirements.
-Always add the Outstanding student in the CV.
+Create a summary that matches the job offer requirements as closely as possible with the information available in the .json resume, but don't write too much text, keep it concise and to the point.
+Always add the Outstanding student in the CV. Add the references if you think they are relevant for the job offer.
 If you want to itemize inside de joblong envorimoent of the .tex template, don't use the \item, go with a dash - and add the description after that. use \\ to separate lines and add a new item.
 here is the .json resume file: {json.dumps(json_resume)} 
 here is the .tex template: {tex_template}

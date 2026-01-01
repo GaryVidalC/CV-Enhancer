@@ -1,39 +1,39 @@
 # CV-Enhancer
 
-Este proyecto es una herramienta para mejorar y personalizar un currículum vitae (CV) basado en una oferta de trabajo específica. Utiliza inteligencia artificial de Google (Gemini) para analizar la oferta de trabajo y adaptar el CV existente para que coincida mejor con los requisitos del puesto.
+This project is a tool to enhance and customize a curriculum vitae (CV) based on a specific job offer. It uses Google's AI (Gemini) to analyze the job offer and adapt the existing CV to better match the job requirements.
 
-## Cómo usar
+## How to Use
 
-1. **Preparación**:
-   - Asegúrate de tener Python 3.x instalado.
-   - Instala la biblioteca necesaria: `pip install google-genai`
-   - Coloca tu clave API de Google GenAI en el archivo `key.txt` (debe estar en la raíz del proyecto).
-   - Prepara tu currículum en formato JSON en `data/resume_gary_en.json`.
-   - Asegúrate de que la plantilla LaTeX esté en `data/latex_template.tex`.
+1. **Preparation**:
+   - Ensure you have Python 3.x installed.
+   - Install the required library: `pip install google-genai`
+   - Place your Google GenAI API key in the `key.txt` file (must be in the project root).
+   - Prepare your resume in JSON format in `data/resume_gary_en.json`.
+   - Ensure the LaTeX template is in `data/latex_template.tex`.
 
-2. **Ejecución**:
-   - Abre una terminal en la carpeta del proyecto.
-   - Ejecuta el script con la URL de la oferta de trabajo como argumento:
+2. **Execution**:
+   - Open a terminal in the project folder.
+   - Run the script with the job offer URL as an argument:
      ```
-     python main.py <URL_DE_LA_OFERTA>
+     python main.py <JOB_OFFER_URL>
      ```
-     Por ejemplo:
+     For example:
      ```
-     python main.py https://ejemplo.com/oferta-trabajo
+     python main.py https://example.com/job-offer
      ```
 
-3. **Resultado**:
-   - El script generará un archivo `output.tex` con el CV personalizado en formato LaTeX.
-   - Puedes compilar `output.tex` con un procesador LaTeX (como pdflatex) para obtener un PDF.
+3. **Result**:
+   - The script will generate an `output.tex` file with the customized CV in LaTeX format.
+   - You can compile `output.tex` with a LaTeX processor (like pdflatex) to get a PDF.
 
-## Requisitos
+## Requirements
 
 - Python 3.x
-- Biblioteca `google-genai`
-- Clave API válida de Google GenAI
-- Archivos de datos: `data/resume_gary_en.json` y `data/latex_template.tex`
+- `google-genai` library
+- Valid Google GenAI API key
+- Data files: `data/resume_gary_en.json` and `data/latex_template.tex`
 
-## Notas
+## Notes
 
-- El idioma del CV generado está configurado en Francés; puedes cambiarlo en el código si es necesario.
-- Asegúrate de que la URL de la oferta de trabajo sea accesible y contenga la información necesaria.
+- The language of the generated CV is set to French; you can change it in the code if necessary.
+- Ensure the job offer URL is accessible and contains the necessary information.
